@@ -41,24 +41,25 @@ namespace trab_cripto
         private void Exec_btn1_Click(object sender, EventArgs e)
         {
             String crypt_src = txt_src1.Text.ToUpper();
-           // String crypt_target = crypt_src;
-           //.Replace('0','o').Replace('1','p').Replace('2','q').Replace('3','r')
-           //.Replace('4', 'ó').Replace('5', 'ú').Replace('6', 'à').Replace('7', 'ô').Replace('8', 'ã').Replace('9', 'õ')
+            // String crypt_target = crypt_src;
+            //.Replace('0','o').Replace('1','p').Replace('2','q').Replace('3','r')
+            //.Replace('4', 'ó').Replace('5', 'ú').Replace('6', 'à').Replace('7', 'ô').Replace('8', 'ã').Replace('9', 'õ')
             String crypt_target = crypt_src.Replace('0', 'o').Replace('1', 'p').Replace('2', 'q').Replace('3', 'r')
                                            .Replace('4', 'ó').Replace('5', 'ú').Replace('6', 'à').Replace('7', 'ô').Replace('8', 'ã').Replace('9', 'õ')
-                                           .Replace('A','4').Replace('B','5').Replace('C','6').Replace('D','7').Replace('E','8').Replace('F','9')
-                                           .Replace('G','s').Replace('H','t').Replace('I','u').Replace('J','v').Replace('K','w').Replace('L','x')
-                                           .Replace('M','a').Replace('N','b').Replace('O','c').Replace('P','d').Replace('Q','e').Replace('R','f')
-                                           .Replace('S','g').Replace('T','h').Replace('U','i').Replace('V','j').Replace('W','k').Replace('X','l')
-                                           .Replace('Y','m').Replace('Z','n')
-                                           .Replace('%','|').Replace('&','?').Replace('*','=').Replace('(','´').Replace(')','`').Replace('-',':')
-                                           .Replace('!','%').Replace('@','&').Replace('#','*').Replace('$','(').Replace('_',')').Replace('+','-')
-                                           .Replace('|','!').Replace('?','@').Replace('=','#').Replace('´','$').Replace('`','_').Replace(':','+')
-                                           .Replace('.','y').Replace(',','z').Replace(';','0').Replace('Á','1').Replace('É','2').Replace('Í','3')
-                                           .Replace('Ó','[').Replace('Ú',']').Replace('À','{').Replace('Ô','}').Replace('Ã','~').Replace('Õ','^')
-                                           .Replace('Ê','.').Replace('Â',',').Replace('Ô',';').Replace('Ç','á').Replace('Û','é').Replace('Ü','í')
-                                           .Replace('[','ñ').Replace(']','ö').Replace('{','ä').Replace('}','£').Replace('~','º').Replace('^','ª')
-                                           .Replace('Ñ','ê').Replace('Ö','â').Replace('Ä','ô').Replace('£','ç').Replace('º','û').Replace('ª','ü');
+                                           .Replace('A', '4').Replace('B', '5').Replace('C', '6').Replace('D', '7').Replace('E', '8').Replace('F', '9')
+                                           .Replace('G', 's').Replace('H', 't').Replace('I', 'u').Replace('J', 'v').Replace('K', 'w').Replace('L', 'x')
+                                           .Replace('M', 'a').Replace('N', 'b').Replace('O', 'c').Replace('P', 'd').Replace('Q', 'e').Replace('R', 'f')
+                                           .Replace('S', 'g').Replace('T', 'h').Replace('U', 'i').Replace('V', 'j').Replace('W', 'k').Replace('X', 'l')
+                                           .Replace('Y', 'm').Replace('Z', 'n')
+                                           .Replace('%', '|').Replace('&', '?').Replace('*', '=').Replace('(', '´').Replace(')', '`').Replace('-', ':')
+                                           .Replace('!', '%').Replace('@', '&').Replace('#', '*').Replace('$', '(').Replace('_', ')').Replace('+', '-')
+                                           .Replace('|', '!').Replace('?', '@').Replace('=', '#').Replace('´', '$').Replace('`', '_').Replace(':', '+')
+                                           .Replace('.', 'y').Replace(',', 'z').Replace(';', '0').Replace('Á', '1').Replace('É', '2').Replace('Í', '3')
+                                           .Replace('Ê', '.').Replace('Â', ',').Replace('Ô', ';').Replace('Ç', 'á').Replace('Û', 'é').Replace('Ü', 'í')
+                                           .Replace('Ñ', 'ê').Replace('Ö', 'â').Replace('Ä', 'ô').Replace('£', 'ç').Replace('º', 'û').Replace('ª', 'ü')
+                                           .Replace('[', 'ñ').Replace(']', 'ö').Replace('{', 'ä').Replace('}', '£').Replace('~', 'º').Replace('^', 'ª')
+                                           .Replace('Ó', '[').Replace('Ú', ']').Replace('À', '{').Replace('Ô', '}').Replace('Ã', '~').Replace('Õ', '^');
+                                           
             txt_target1.Text = crypt_target;
         }
 
