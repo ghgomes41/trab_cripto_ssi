@@ -146,17 +146,20 @@
             // 
             // txt_target1
             // 
-            this.txt_target1.Enabled = false;
+            this.txt_target1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txt_target1.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txt_target1.Location = new System.Drawing.Point(15, 83);
             this.txt_target1.Name = "txt_target1";
+            this.txt_target1.ReadOnly = true;
             this.txt_target1.Size = new System.Drawing.Size(433, 20);
             this.txt_target1.TabIndex = 3;
             // 
             // txt_target2
             // 
-            this.txt_target2.Enabled = false;
+            this.txt_target2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txt_target2.Location = new System.Drawing.Point(15, 88);
             this.txt_target2.Name = "txt_target2";
+            this.txt_target2.ReadOnly = true;
             this.txt_target2.Size = new System.Drawing.Size(433, 20);
             this.txt_target2.TabIndex = 4;
             // 
@@ -205,7 +208,6 @@
         private System.Windows.Forms.RadioButton rbDecryp;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_target1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_src1;
         private System.Windows.Forms.Button exec_btn1;
@@ -215,6 +217,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_src2;
         private System.Windows.Forms.Button exec_btn2;
+        private System.Windows.Forms.TextBox txt_target1;
     }
 }
 
