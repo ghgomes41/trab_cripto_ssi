@@ -53,9 +53,9 @@
             this.rbCryp.Name = "rbCryp";
             this.rbCryp.Size = new System.Drawing.Size(79, 17);
             this.rbCryp.TabIndex = 0;
-            this.rbCryp.TabStop = true;
             this.rbCryp.Text = "Criptografar";
             this.rbCryp.UseVisualStyleBackColor = true;
+            this.rbCryp.CheckedChanged += new System.EventHandler(this.RbCryp_CheckedChanged);
             // 
             // rbDecryp
             // 
@@ -64,9 +64,9 @@
             this.rbDecryp.Name = "rbDecryp";
             this.rbDecryp.Size = new System.Drawing.Size(97, 17);
             this.rbDecryp.TabIndex = 1;
-            this.rbDecryp.TabStop = true;
             this.rbDecryp.Text = "Descriptografar";
             this.rbDecryp.UseVisualStyleBackColor = true;
+            this.rbDecryp.CheckedChanged += new System.EventHandler(this.RbDecryp_CheckedChanged);
             // 
             // panel1
             // 
@@ -100,6 +100,7 @@
             this.exec_btn1.TabIndex = 0;
             this.exec_btn1.Text = "Executar";
             this.exec_btn1.UseVisualStyleBackColor = true;
+            this.exec_btn1.Click += new System.EventHandler(this.Exec_btn1_Click);
             // 
             // exec_btn2
             // 
@@ -109,6 +110,7 @@
             this.exec_btn2.TabIndex = 1;
             this.exec_btn2.Text = "Executar";
             this.exec_btn2.UseVisualStyleBackColor = true;
+            this.exec_btn2.Click += new System.EventHandler(this.Exec_btn2_Click);
             // 
             // txt_src1
             // 
@@ -144,6 +146,7 @@
             // 
             // txt_target1
             // 
+            this.txt_target1.Enabled = false;
             this.txt_target1.Location = new System.Drawing.Point(15, 83);
             this.txt_target1.Name = "txt_target1";
             this.txt_target1.Size = new System.Drawing.Size(433, 20);
@@ -151,6 +154,7 @@
             // 
             // txt_target2
             // 
+            this.txt_target2.Enabled = false;
             this.txt_target2.Location = new System.Drawing.Point(15, 88);
             this.txt_target2.Name = "txt_target2";
             this.txt_target2.Size = new System.Drawing.Size(433, 20);
@@ -185,6 +189,7 @@
             this.Controls.Add(this.rbCryp);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
