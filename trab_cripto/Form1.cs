@@ -84,5 +84,18 @@ namespace trab_cripto
                                                
             txt_target2.Text = decrypt_target;
         }
+
+        private void Btn_clear_Click(object sender, EventArgs e)
+        {
+            txt_src1.Text = "";
+            txt_src2.Text = "";
+            txt_target1.Text = "";
+            txt_target2.Text = "";
+        }
+
+        private void Btn_exit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

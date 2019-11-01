@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.rbCryp = new System.Windows.Forms.RadioButton();
             this.rbDecryp = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,6 +43,8 @@
             this.txt_target2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_exit = new System.Windows.Forms.Button();
+            this.btn_clear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -181,17 +184,40 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Resultado:";
             // 
+            // btn_exit
+            // 
+            this.btn_exit.Location = new System.Drawing.Point(466, 327);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(75, 23);
+            this.btn_exit.TabIndex = 4;
+            this.btn_exit.Text = "Sair";
+            this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
+            // 
+            // btn_clear
+            // 
+            this.btn_clear.Location = new System.Drawing.Point(385, 327);
+            this.btn_clear.Name = "btn_clear";
+            this.btn_clear.Size = new System.Drawing.Size(75, 23);
+            this.btn_clear.TabIndex = 5;
+            this.btn_clear.Text = "Limpar";
+            this.btn_clear.UseVisualStyleBackColor = true;
+            this.btn_clear.Click += new System.EventHandler(this.Btn_clear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(556, 341);
+            this.ClientSize = new System.Drawing.Size(556, 362);
+            this.Controls.Add(this.btn_clear);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.rbDecryp);
             this.Controls.Add(this.rbCryp);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Trabalho SSI - Criptografia";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -218,6 +244,8 @@
         private System.Windows.Forms.TextBox txt_src2;
         private System.Windows.Forms.Button exec_btn2;
         private System.Windows.Forms.TextBox txt_target1;
+        private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Button btn_clear;
     }
 }
 
